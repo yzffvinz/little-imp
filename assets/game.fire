@@ -183,7 +183,7 @@
       "array": [
         0,
         0,
-        418.2902700278839,
+        688.4901960086288,
         0,
         0,
         0,
@@ -542,6 +542,7 @@
     "jumpAudio": {
       "__uuid__": "dc194f1a-c8a5-46ca-aaf9-f03b70974af5"
     },
+    "action": null,
     "_id": "fbiIh5Tv5H3IH8Yl6cCeRC"
   },
   {

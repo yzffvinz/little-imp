@@ -5,10 +5,10 @@
       "main": true,
       "url": "app://editor/index.html",
       "windowType": "dockable",
-      "x": 0,
-      "y": 23,
-      "width": 1440,
-      "height": 877,
+      "x": -462,
+      "y": -1417,
+      "width": 2560,
+      "height": 1417,
       "layout": {
         "children": [
           {
@@ -18,9 +18,9 @@
                 "children": [
                   "hierarchy"
                 ],
-                "height": 275,
+                "height": 463,
                 "type": "panel",
-                "width": 289
+                "width": 514
               },
               {
                 "active": 0,
@@ -28,14 +28,14 @@
                   "assets",
                   "cloud-function"
                 ],
-                "height": 518,
+                "height": 870,
                 "type": "panel",
-                "width": 289
+                "width": 514
               }
             ],
-            "height": 796,
+            "height": 1336,
             "type": "dock-v",
-            "width": 289
+            "width": 514
           },
           {
             "children": [
@@ -46,39 +46,39 @@
                     "children": [
                       "scene"
                     ],
-                    "height": 449,
+                    "height": 839,
                     "type": "panel",
-                    "width": 459
+                    "width": 953
                   },
                   {
                     "active": 0,
                     "children": [
                       "node-library"
                     ],
-                    "height": 449,
+                    "height": 839,
                     "type": "panel",
-                    "width": 379
+                    "width": 655
                   }
                 ],
-                "height": 449,
+                "height": 839,
                 "type": "dock-h",
-                "width": 841
+                "width": 1611
               },
               {
-                "active": 2,
+                "active": 0,
                 "children": [
                   "console",
                   "timeline",
                   "game-window"
                 ],
-                "height": 344,
+                "height": 494,
                 "type": "panel",
-                "width": 841
+                "width": 1611
               }
             ],
-            "height": 796,
+            "height": 1336,
             "type": "dock-v",
-            "width": 841
+            "width": 1611
           },
           {
             "active": 0,
@@ -86,9 +86,9 @@
               "inspector",
               "cocos-services"
             ],
-            "height": 796,
+            "height": 1336,
             "type": "panel",
-            "width": 304
+            "width": 429
           }
         ],
         "type": "dock-h"

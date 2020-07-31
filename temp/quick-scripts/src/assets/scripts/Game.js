@@ -74,6 +74,8 @@ cc.Class({
   },
   gameOver: function gameOver() {
     this.player.stopAllActions(); //停止 player 节点的跳跃动作
+
+    cc.director.loadScene('game');
   },
   spawnNewStar: function spawnNewStar() {
     // 使用给定的模板在场景中生成一个新节点
