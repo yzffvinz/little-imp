@@ -21,6 +21,8 @@ cc.Class({
     maxMoveSpeed: 0,
     // 加速度
     accel: 0,
+    // 缩小时间
+    squashDuration: 0,
     // 跳跃音效资源
     jumpAudio: {
       "default": null,
@@ -30,7 +32,7 @@ cc.Class({
   },
   // LIFE-CYCLE CALLBACKS:
   onLoad: function onLoad() {
-    // 加速度方向开关dddddd
+    // 加速度方向开关
     this.accLeft = false;
     this.accRight = false; // 主角当前水平方向速度
 
@@ -74,7 +76,7 @@ cc.Class({
 
     var callback = cc.callFunc(this.playJumpSound, this); // 不断重复，而且每次完成落地动作后调用回调来播放声音
 
-    return cc.repeatForever(cc.sequence(jumpUp, jumpDown, callback)); //  return cc.repeatForever(cc.sequence(squash, stretch, jumpUp, scaleBack, jumpDown, callback));
+    return cc.repeatForever(cc.sequence(squash, stretch, jumpUp, scaleBack, jumpDown, callback));
   },
   playJumpSound: function playJumpSound() {
     // 调用声音引擎播放声音

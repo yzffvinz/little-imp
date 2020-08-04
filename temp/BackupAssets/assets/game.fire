@@ -183,7 +183,7 @@
       "array": [
         0,
         0,
-        554.2562584220408,
+        688.4901960086288,
         0,
         0,
         0,
@@ -535,10 +535,11 @@
       "__id__": 9
     },
     "_enabled": true,
-    "jumpHeight": 200,
+    "jumpHeight": 180,
     "jumpDuration": 0.3,
-    "maxMoveSpeed": 400,
-    "accel": 350,
+    "maxMoveSpeed": 550,
+    "accel": 450,
+    "squashDuration": 0.1,
     "jumpAudio": {
       "__uuid__": "dc194f1a-c8a5-46ca-aaf9-f03b70974af5"
     },

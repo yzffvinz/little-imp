@@ -29,3 +29,4 @@ cc.Class({
         this.game.startGame();
     }
 });
+ 

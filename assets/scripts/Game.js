@@ -21,6 +21,7 @@ cc.Class({
         maxStarDuration: 0,
         minStarDuration: 0,
         starDuration: 0,
+        isOver: false,
         // 地面节点，用于确定星星生成的高度
         ground: {
             default: null,
@@ -60,8 +61,6 @@ cc.Class({
     },
 
     start () {
-        // console.log('hook start');
-        // this.showPlayBtn();
     },
 
     update (dt) {
@@ -74,8 +73,28 @@ cc.Class({
     },
 
     gameOver: function () {
-        this.player.stopAllActions(); //停止 player 节点的跳跃动作
+        if (!this.isOver) {
+            this.isOver = true;
+            this.player.stopAllActions(); //停止 player 节点的跳跃动作
+            this.player.getComponent('Player').xSpeed = 0;
+            this.showPlayBtn();
+        }
+        // cc.director.loadScene('game');
+    },
+
+    startGame () {
         cc.director.loadScene('game');
+        this.isOver = false;
+    },
+
+    showPlayBtn () {
+        // 使用给定的模板在场景中生成一个新节点
+        var playBtn = cc.instantiate(this.btnplayPrefab);
+        // 将新增的节点添加到 Canvas 节点下面
+        this.node.addChild(playBtn);
+        // 为星星设置一个随机位置
+        playBtn.setPosition(this.getPlayBtnPosition());
+        playBtn.getComponent('Btnplay').game = this;
     },
 
     spawnNewStar () {
